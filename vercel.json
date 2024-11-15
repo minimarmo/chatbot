@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/get_answer",
+      "src": "/(.*)",
       "dest": "/app.py"
     }
   ]
