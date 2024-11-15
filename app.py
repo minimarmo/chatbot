@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from chatbot import get_answer  # นำเข้าฟังก์ชัน get_answer จาก chatbot.py
 
 app = Flask(__name__)
+CORS(app)  # เปิดการใช้งาน CORS
 
 @app.route('/get_answer', methods=['POST'])
 def chat():
