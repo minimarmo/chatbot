@@ -3,7 +3,7 @@ from chatbot import get_answer  # นำเข้าฟังก์ชัน get
 
 app = Flask(__name__)
 
-@app.route('/chat', methods=['POST'])
+@app.route('/get_answer', methods=['POST'])
 def chat():
     # รับคำถามจากผู้ใช้ผ่าน JSON
     user_question = request.json.get('question')
