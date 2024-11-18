@@ -27,9 +27,9 @@ model = LogisticRegression()
 model.fit(X, answers)
 
 # ทดสอบโมเดล
-def get_answer(question):
+def get_answer2(question):
     question_vector = vectorizer.transform([question])
     return model.predict(question_vector)[0]
 
 # ตัวอย่างการทดสอบ
-print(get_answer("วิธีรีเซ็ตรหัสผ่านคืออะไร"))
+print(get_answer2("วิธีรีเซ็ตรหัสผ่านคืออะไร"))
